@@ -17,24 +17,35 @@ body{
     height: 100%;
 }
 
-.logo{
-    width: 90px;
-    margin: 10px;
-}
-
-
-
-
-
-.buttons{
+section{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 450px;
-    
 }
 
-.button{
+#adct_word{
+    position: absolute;
+    outline: none;
+    margin-bottom: 300px;
+    width: 500px;
+    height: 40px;
+    background-color: transparent;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 21px;
+   
+}
+
+#adct_word::placeholder{
+    color: rgba(255, 255, 255, 0.527);
+    font-size: 18px;
+}
+
+button{
     font-weight: bold;
     font-size: 20px;
     background-color: rgba(225, 226, 226, 0);
@@ -56,5 +67,20 @@ button:hover{
     color: #000;
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

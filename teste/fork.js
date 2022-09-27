@@ -1,7 +1,9 @@
 let palavras = ['ALURA', 'FORCA', 'HTML', 'ORACLE', 'JAVASCRIPT', 'LOGICA', 'PROGRAMA', 'DESAFIO'];
-let tabuleiro = document.getElementById('forca').getContext('2d');
+let tela = document.getElementById('forca').getContext('2d');
 let palavraSecreta = "";
 
+let letras = []
+let erros = 7;
 
 function escolherPalavraSecreta() {
     let palavra = palavras[Math.floor(Math.random() * palavras.length)]
@@ -9,7 +11,6 @@ function escolherPalavraSecreta() {
     console.log(palavra)
     return palavra
   }
-
 
   function verificarLetra(key){
     let estado = false
@@ -29,17 +30,49 @@ function escolherPalavraSecreta() {
   }
 
   function adicionarLetraIncorreta(){
-    erros -= 1
+    erros -= 1;
+    if (erros == 6) {
+      desenhaCirculo()
+    }
+
+    if (erros == 5) {
+      desenhaTorso()
+    }
+
+    if (erros == 4) {
+      desenharBraco()
+    }
+
+    if (erros == 3) {
+      desenharBraco_2()
+    }
+
+    if (erros == 2) {
+      desenharPerna()
+    }
+
+    if (erros == 1) {
+      desenharPerna_2()
+    }
   }
-
-// ========================================================================== //
-
+  
 function iniciaJogo(){
+   
     document.getElementById("div-desaparece").style.display = 'none';
     escolherPalavraSecreta()
     
+
     desenharCanvas()
     desenharLinhas()
+    desenharForcaMastro()
+    desenharForcaMastro_2()
+    desenharApoio()
+
+    // ===Boneco== //
+    
+    
+    // ==========//
+
     document.onkeydown = (e) => {
 
         let letra = e.key.toUpperCase()
@@ -54,7 +87,8 @@ function iniciaJogo(){
         else{
           adicionarLetraIncorreta(letra)
           escreverLetraIncorreta(letra, erros)
-
+          
         }
       }
-  }
+
+    }

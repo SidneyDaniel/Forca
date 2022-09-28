@@ -3,7 +3,7 @@
 >Satus: Finished
 
 
-### Projeto de Forca do curso Oracle Next Alura(Projeto principal)
+### Projeto de Forca do curso Oracle Next Alura
 
 ## A o projeto de forca se dá por meio do uso da Canvas API onde é possível desenhar várias formas via JavaScript 
 

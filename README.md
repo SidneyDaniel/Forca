@@ -1,18 +1,13 @@
-<h1>_DECODE_</h1>
+<h1>Projeto de Forca</h1>
 
 >Satus: Finished
 
 
-### Projeto de decodificador e codificador do curso Oracle Next Alura(Projeto principal)
+### Projeto de Forca do curso Oracle Next Alura(Projeto principal)
 
-## O decodificador funciona por meio da troca de letras das frases pelas seguintes varíaveis:
-+ A letra "e" é convertida para "enter"
-+ A letra "i" é convertida para "imes"
-+ A letra "a" é convertida para "ai"
-+ A letra "o" é convertida para "ober"
-+ A letra "u" é convertida para "ufat"
+## A o projeto de forca se dá por meio do uso da Canvas API onde é possível desenhar várias formas via JavaScript 
 
-Um ótimo exemplo é quando se escreve digita "gato" que se codifica para "gaitober"
+Um exemplo do funcionamento do projeto:
 
 ## Tecnologias usadas:
 <table>
@@ -29,7 +24,7 @@ Um ótimo exemplo é quando se escreve digita "gato" que se codifica para "gaito
 </table>
 
 ## Como funciona a aplicação:
-1) Ao abrir a página o usuário verá duas áreas de texto.
+1) Ao abrir a página o usuário verá uma lading page:
 2) Ao digitar uma frase o usuário terá duas opções.
 3) O botão de codificar, codificará a frase.
 4) O botão de decodificar, decodificara a frase.

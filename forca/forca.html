@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forca</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forca.css">
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="https://www.oracle.com/a/ocom/img/customerlogo-alura.png" >
+    </header>
+
+    <section>
+      <div id="div-desaparece" class="botoes-home">
+        <input placeholder="&#9888 máx. 8 palavras!" type="text" id="adct_word" maxlength="8">
+        <a href="#forca">
+          <input class="btn-iniciar" type="submit" value="Iniciar Jogo" id="iniciar-jogo" onclick="palavraEscolhida(),iniciaJogo()">
+        </a>
+      </div>
+    </section>
+
+
+
+
+
+    <div class="modal" id="modal1">
+      <div class="content">
+        Venceu!
+        <a href="file:///E:/Forca/forca/forca.html">Jogar Novamente</a>
+      </div>
+    </div>
+
+    <div class="modal" id="modal2">
+      <div class="content">
+        Você Perdeu!
+        <a href="file:///E:/Forca/forca/forca.html">Jogar Novamente</a>
+      </div>
+    </div>
+
+
+
+    <div id="div-aparece-forca" class="canvas">
+      <canvas id="forca" height="860px" width="1200"></canvas>
+    </div>
+
+
+    <script type="text/javascript" src="forca.js"></script>
+    <script type="text/javascript" src="canvas.js"></script> 
+  </body>
+</html>
+
+

@@ -137,12 +137,12 @@ function desenharCanvas() {
 
 
   function escreverLetraCorreta(index){
-      tela.font = "bold 52px Inter"
+      tela.font = "bold 52px Serif"
       tela.lineCap = "round"
       tela.fillStyle = "#0A3871"
       tela.lineWidth = 6
       let largura= 600/palavraSecreta.length
-      tela.fillText(palavraSecreta[index],505 + (largura * index),620 )
+      tela.fillText(palavraSecreta[index],505 + (largura * index),620)
       
   }
   

@@ -4,15 +4,18 @@ let palavraSecreta = "";
 
 let letras = []
 let erros = 7;
+let acertos = 0;
 
-function escolherPalavraSecreta() {
-    let palavra = palavras[Math.floor(Math.random() * palavras.length)]
-    palavraSecreta = palavra
-    console.log(palavra)
-    return palavra
-  }
+function palavraEscolhida(){
+  let palavra = document.querySelector("#adct_word");
+  palavraSecreta = palavra.value.toUpperCase();
+  console.log(palavraSecreta)
+  return palavraSecreta
+} 
 
-  function verificarLetra(key){
+
+
+function verificarLetra(key){
     let estado = false
     if(key >= 65 && letras.indexOf(key) || key <= 90 && letras.indexOf(key) ){
        letras.push(key)
@@ -27,7 +30,31 @@ function escolherPalavraSecreta() {
       console.log(letras, "if true")
       return estado
     }
+}
+
+  function modalWin(){
+    const modal = document.querySelector('#modal1')
+    const actualStyle = modal.style.display
+    if(actualStyle == 'block'){
+      modal.style.display = 'none'
+
+    }else{
+      modal.style.display = 'block'
+    }
+    
+}
+
+function modalLose(){
+  const modal = document.querySelector('#modal2')
+  const actualStyle = modal.style.display
+  if(actualStyle == 'block'){
+    modal.style.display = 'none'
+
+  }else{
+    modal.style.display = 'block'
   }
+  
+}
 
   function adicionarLetraIncorreta(){
     erros -= 1;
@@ -53,25 +80,23 @@ function escolherPalavraSecreta() {
 
     if (erros == 1) {
       desenharPerna_2()
+      modalLose()
     }
+   
   }
   
+
 function iniciaJogo(){
    
     document.getElementById("div-desaparece").style.display = 'none';
-    escolherPalavraSecreta()
+    palavraEscolhida()
     
-
+// forca
     desenharCanvas()
     desenharLinhas()
     desenharForcaMastro()
     desenharForcaMastro_2()
     desenharApoio()
-
-    // ===Boneco== //
-    
-    
-    // ==========//
 
     document.onkeydown = (e) => {
 
@@ -81,6 +106,15 @@ function iniciaJogo(){
           for(let i = 0; i < palavraSecreta.length; i++){
             if(palavraSecreta[i] === letra){
               escreverLetraCorreta(i)
+              
+              acertos++;
+            }
+            if (acertos == palavraSecreta.length){
+              
+             setTimeout(() => {
+             modalWin()
+             }, 500); 
+              return
             }
           }
         }
@@ -92,3 +126,6 @@ function iniciaJogo(){
       }
 
     }
+
+    
+

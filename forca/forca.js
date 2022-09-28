@@ -1,4 +1,3 @@
-let palavras = ['ALURA', 'FORCA', 'HTML', 'ORACLE', 'JAVASCRIPT', 'LOGICA', 'PROGRAMA', 'DESAFIO'];
 let tela = document.getElementById('forca').getContext('2d');
 let palavraSecreta = "";
 

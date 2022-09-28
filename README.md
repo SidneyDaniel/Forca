@@ -25,6 +25,9 @@ Um exemplo do funcionamento do projeto:
 
 ## Como funciona a aplicação:
 1) Ao abrir a página o usuário verá uma lading page:
+<p>
+    <img with="470" src="https://raw.githubusercontent.com/SidneyDaniel/Forca/main/Imagens/P%C3%A1ginaInicial.jpg">
+</p>
 2) Ao digitar uma frase o usuário terá duas opções.
 3) O botão de codificar, codificará a frase.
 4) O botão de decodificar, decodificara a frase.

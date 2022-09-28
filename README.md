@@ -28,12 +28,18 @@ Um exemplo do funcionamento do projeto:
 <p>
     <img with="470" src="https://raw.githubusercontent.com/SidneyDaniel/Forca/main/Imagens/P%C3%A1ginaInicial.jpg">
 </p>
-2) Ao digitar uma frase o usuário terá duas opções.
-3) O botão de codificar, codificará a frase.
-4) O botão de decodificar, decodificara a frase.
-5) O resultado de ambas as opções saíra em um área ao lado.
-6) O usuário tem a opção de copiar o texto gerado por meio de um botão de copiar. 
+2) O usuário irá escolher uma palavra para iniciar o jogo:
+<p>
+    <img with="470" src="https://raw.githubusercontent.com/SidneyDaniel/Forca/main/Imagens/InicioJogo.jpg">
+</p>
+3) Uma nova tela aparecerá utilizando o Canvas:
+<p>
+    <img with="470" src="https://raw.githubusercontent.com/SidneyDaniel/Forca/main/Imagens/Jogo.jpg">
+</p>
+4) Assim o as letras apareceram sinalizando se estão corretas ou erradas de acordo com o apareceimento do boneco:
+<p>
+    <img with="470" src="https://raw.githubusercontent.com/SidneyDaniel/Forca/main/Imagens/JogoemFuncionamento.jpg">
+</p>
+ 
 
-Links:
-Projeto Base:
-vvv
+
